@@ -1,0 +1,23 @@
+<div class="container"></div>
+<div class="py-3 text-center"></div>
+<h3>Cadastro de Professores</h3>    
+
+<div class="row"></div>
+<div class="col-12 d-flex align-content-end justify-content-end pb-5"></div>
+<a class="btn btn-primary" [href]="'/'"> VOLTAR</a>
+    
+<div class="row d-flex align-content justify-content-center">
+<form [formGroup]="form"  (ngSubmit)="onSubmit()" ></form>
+<formly-form
+[form] ="form"
+[model] = "model"
+[fields] ="fields">
+</formly-form>
+
+<div class="col-12 d-flex align-content-center justify-content-center pt-5 "></div>
+<button class="btn btn-primary" type="submit"> SALVAR</button>
+
+<button class="btn btn-danger" type="reset">CANCELAR</button>
+
+
+<p>teacher-form works!</p>
